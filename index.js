@@ -94,9 +94,9 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
   2. log the reviews array to the console to check your work
 */
+reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
 
-
-
+//console.log(reviews)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -149,11 +149,12 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+  const n = array.length -1
+  return `${array[n].name} gave the restaurant a ${array[n].rating} star review, and their feedback was: ${array[n].feedback}`
 } 
 
-
+getLastReview(reviews)//
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
